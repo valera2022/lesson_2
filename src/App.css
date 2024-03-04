@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,3 +37,15 @@
     transform: rotate(360deg);
   }
 }
+
+.navBar{
+  width: 100%;
+  background-color: red;
+  height: 40px;
+}
+.navBar button{
+  color: red;
+  height: 40px;
+}
+
+
