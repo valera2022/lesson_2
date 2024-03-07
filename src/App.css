@@ -48,4 +48,15 @@
   height: 40px;
 }
 
+.off{
+  background-color: black;
+  height: 600px;
+
+}
+
+.on{
+  background-color: green;
+  height: 600px;
+
+}
 
