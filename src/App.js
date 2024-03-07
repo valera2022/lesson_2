@@ -4,14 +4,16 @@ import Navbar from './Navbar';
 import { useState } from 'react';
 import Switch from './Switch';
 import Addavatar from './Addavatar';
+import Doggenerator from './Doggenerator';
 
 function App() {
   const [loggedIn,setLoggedIn] = useState(false)
   return (
     <div className="App">
      <Navbar loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
-     <Addavatar/>
+     {/* <Addavatar/> */}
      {/* <Switch/> */}
+     <Doggenerator/>
      
     
     </div>

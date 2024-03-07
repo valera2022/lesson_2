@@ -3,12 +3,28 @@ import { useState } from 'react'
 
 
 export default function Addavatar() {
+  const [avatar,setAvatar] = useState()
   const [image,setImage] = useState()
   const [name,setName] =useState()
   const [ability,setAbility] = useState()
+
+  let formData = {
+    image: image,
+    name: name,
+    ability: ability
+  }
   // console.log(image)
   // console.log(name)
-  // console.log(ability)
+  // console.log(ability) 
+  function handleSubmit(){
+    fetch("http//localhost/bla/bla",{
+    method: "POST",
+    body: JSON.toStringify(formData)
+  })
+  .then(res => res.json())
+  .then(data => setAvatar(data))
+
+  }
  
 
 
